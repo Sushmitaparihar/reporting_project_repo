@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2023_01_20_060252) do
+ActiveRecord::Schema.define(version: 2023_01_20_110713) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,6 +41,16 @@ ActiveRecord::Schema.define(version: 2023_01_20_060252) do
     t.index ["reset_password_token"], name: "index_admin_users_on_reset_password_token", unique: true
   end
 
+  create_table "client_informations", force: :cascade do |t|
+    t.string "full_name"
+    t.string "company"
+    t.string "url"
+    t.string "email"
+    t.string "phone_number"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "project_managers", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -56,6 +66,17 @@ ActiveRecord::Schema.define(version: 2023_01_20_060252) do
   create_table "project_roles", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string "name"
+    t.datetime "Project_start_date"
+    t.datetime "Estimated_completion_date"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.integer "status"
+    t.integer "phase"
+    t.integer "category"
   end
 
   create_table "stakeholders", force: :cascade do |t|

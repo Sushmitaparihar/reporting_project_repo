@@ -33,6 +33,7 @@ group :development, :test do
   gem 'sassc'
   gem 'activeadmin'
   gem 'devise'
+  gem 'byebug'
 end
 
 
