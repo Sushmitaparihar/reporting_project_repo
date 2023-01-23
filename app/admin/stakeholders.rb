@@ -1,3 +1,4 @@
-ActiveAdmin.register_page "Stakeholder" do
+ActiveAdmin.register Stakeholder do
+	
   
 end

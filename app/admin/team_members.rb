@@ -1,3 +1,5 @@
-ActiveAdmin.register_page "TeamMember" do
+ActiveAdmin.register TeamMember do
+
+	
 
 end

@@ -1,2 +1,4 @@
-ActiveAdmin.register_page "ProjectManager" do
+ActiveAdmin.register ProjectManager do
+
+
 end

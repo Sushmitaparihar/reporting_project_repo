@@ -1,4 +1,5 @@
-ActiveAdmin.register_page "SuperAdmin" do
+ActiveAdmin.register SuperAdmin do
+	
 
 end
 
