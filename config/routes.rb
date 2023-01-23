@@ -4,7 +4,11 @@ Rails.application.routes.draw do
   ActiveAdmin.routes(self)
  
   resources :projects
+
   resources :client_informations
+
+   
+  resources :project_members
 
 
 end
