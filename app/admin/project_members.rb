@@ -1,6 +1,6 @@
 ActiveAdmin.register ProjectMember do
 
-  permit_params :name, :email
+  permit_params :name, :email, :project_id, :type
 
     index do
       selectable_column
