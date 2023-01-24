@@ -28,7 +28,7 @@
     end
     private
     def manager_params
-        params.require(:manager).permit(:name ,:email)
+        params.require(:project_manager).permit(:name ,:email)
     end
     def set_project_manager
         begin
